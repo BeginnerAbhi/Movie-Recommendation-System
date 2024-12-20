@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Recommendation System</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    h1 {
+      text-align: center;
+    }
+    section {
+      margin: 20px;
+      padding: 10px;
+      border: 1px solid #ccc;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    li {
+      margin: 5px 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>Movie Recommendation System</h1>
+
+  <section>
+    <h2>Rate a Movie</h2>
+    <select id="movie-select">
+      <option value="">Select a movie</option>
+    </select>
+    <input type="number" id="movie-rating" min="1" max="5" placeholder="Rate (1-5)">
+    <button id="rate-button">Rate</button>
+  </section>
+
+  <section>
+    <h2>Recommended Movies</h2>
+    <ul id="recommendation-list">
+      <li>Loading recommendations...</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Browse Movies</h2>
+    <input type="text" id="browse-input" placeholder="Filter by genre or title">
+    <ul id="movie-list">
+      <li>Loading movies...</li>
+    </ul>
+  </section>
+
+  <script type="module" src="./script.js"></script>
+</body>
+</html>
